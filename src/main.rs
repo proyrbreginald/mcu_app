@@ -24,11 +24,11 @@ pub fn main() -> ! {
     loop {
         gpio.posrc().write(|w| unsafe { w.bits(LED_MASK) });
         rtt_log!("led on!");
-        delay(200_000);
+        delay(250_000);
 
         gpio.porrc().write(|w| unsafe { w.bits(LED_MASK) });
         rtt_log!("led off!");
-        delay(200_000);
+        delay(250_000);
     }
 }
 
