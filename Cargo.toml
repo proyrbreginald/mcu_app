@@ -3,13 +3,14 @@ name = "mcu_app"
 version = "0.1.0"
 edition = "2024"
 
-[lib]
-path = "src/lib.rs"
+[[bin]]
+name = "mcu_app"
 test = false
 bench = false
 doctest = false
 
 [dependencies]
+mcu_rt = { path = "../mcu_rt" }
 mcu_hal = { path = "../mcu_hal" }
 
 [features]

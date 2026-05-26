@@ -1,6 +1,8 @@
 #![no_std]
+#![no_main]
 
 use mcu_hal::Peripherals;
+use mcu_rt as _;
 
 const LED_PIN: u16 = 13;
 const LED_MASK: u16 = 1 << LED_PIN;
