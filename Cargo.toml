@@ -11,3 +11,6 @@ doctest = false
 
 [dependencies]
 mcu_hal = { path = "../mcu_hal" }
+
+[features]
+default = []

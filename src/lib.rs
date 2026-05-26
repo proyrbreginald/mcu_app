@@ -10,7 +10,6 @@ pub fn main() -> ! {
     let dp = unsafe { Peripherals::steal() };
     let gpio = dp.gpio;
 
-    // PA5: 推挽输出（示例）
     gpio.poerc()
         .modify(|r, w| unsafe { w.bits(r.bits() | LED_MASK) });
 
